@@ -1,9 +1,9 @@
 body {
-  padding-top: 200px;
+  padding-top: 50px;
   padding-bottom: 200px;
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #090d1f; /* Darker navy background */
+  background-color: #090d1f; 
   color: #ddd;
   height: 100vh;
   display: flex;
@@ -15,7 +15,25 @@ div {
   width: 100%;
   max-width: 700px;
   padding: 30px;
-  background-color: #121a33; /* Darker container */
+  background-color: #121a33; 
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.signin {
+  width: 90%;
+  padding: 30px;
+  background-color: #172241;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.signup {
+  width: 90%;
+  padding: 30px;
+  background-color: #172241;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease;
@@ -25,7 +43,7 @@ div {
   width: 100%;
   max-width: 90%;
   padding: 30px;
-  background-color: #1a2644; /* Darker inner container */
+  background-color: #1a2644; 
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease;
@@ -35,7 +53,7 @@ div {
   width: 100%;
   max-width: 90%;
   padding: 30px;
-  background-color: #1e304d; 
+  background-color: #061733; 
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -66,6 +84,23 @@ input[type="text"]:focus {
   border-color: #90aae9; 
 }
 
+.inputsignInUp {
+  width: calc(100% - 60px);
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #2d3d5c; 
+  border-radius: 8px;
+  font-size: 16px;
+  color: #f2f2f2;
+  background-color: #101c34; 
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.inputsignInUp:focus {
+  border-color: #90aae9; 
+}
+
 button {
   display: inline-flex;
   align-items: center;
@@ -93,7 +128,7 @@ li {
   justify-content: space-between;
   align-items: flex-start;
   padding: 15px 20px;
-  background-color: #162b4a; /* Darker navy for list items */
+  background-color: #1c3255; 
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 12px;
@@ -113,7 +148,7 @@ strong {
 
 p {
   margin: 5px 0 0;
-  color: #b0bed8; /* Softer navy text */
+  color: #b0bed8; 
   font-size: 15px;
 }
 

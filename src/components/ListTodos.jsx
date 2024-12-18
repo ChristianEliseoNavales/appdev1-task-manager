@@ -3,6 +3,7 @@ import { MdDelete } from "react-icons/md";
 import { IoIosAddCircle } from "react-icons/io";
 import {db} from '../firebase.js'
 import { collection, addDoc, getDocs, updateDoc, doc, deleteDoc} from 'firebase/firestore';
+import SignOut from './SignOut.jsx';
 
 const ListTodos = ({ user }) => {
     const [loading, setLoading] = useState(true)
@@ -64,7 +65,7 @@ const ListTodos = ({ user }) => {
     return (
         <>
             <div className='inner'>
-            <h3>Welcome, {user}</h3>
+            <h3>Welcome, {user.displayName || user.email} | <SignOut/> </h3>
             <input type="text" value={newTodo} placeholder='Add New Task' onChange={(e) => setNewTodo(e.target.value)} />
             <input type="text" value={newDescription} placeholder='Add a short description...' onChange={(e) => setNewDescription(e.target.value)} />
             <button onClick={handleNewTodo}><IoIosAddCircle /> Add</button>
